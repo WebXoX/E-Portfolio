@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+.container>.cube>span{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-top: solid 70px white ;
+    border-right: solid 50px transparent ;
+    border-left: solid 50px transparent ;
+    transform-style: preserve-3d;
+    transform: rotate(0deg);
+    animation: animate 6s linear infinite;
+}
+
+.container{
+    position: fixed ;
+    height: 0px;
+    width: 0px;
+    transform-style: preserve-3d;
+    transform: rotate(0deg);
+    animation: animate 6s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(0deg) rotateY(360deg);
+    }
+}
+/* .container .cube{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    border: 1px solid white ;
+    transform: rotateY(calc(90deg *var(--i)));
+} */
+

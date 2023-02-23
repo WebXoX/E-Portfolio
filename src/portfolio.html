@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>E-Portfolio</title>
+    <link rel="stylesheet" href="../stylesheet/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../stylesheet/blog.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="/js/projects.js"></script>
+    <script src="/js/skills.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div id="app">
+            <nav>
+                <div class="logo">Joe.</div>
+                <ul class="navItems">
+                    <li><a id='1' href="#Home" @click="showBlogs(1)">home</a></li>
+                    <li><a id="0" href="#About"@click="showBlogs(0)">about</a></li>
+                    <li><a id="2" href="#Skills" @click="showBlogs(2)">skills</a></li>
+                    <li><a id="3" href="#Projects" @click="showBlogs(3)" >Projects</a></li>
+                </ul>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/joe-perinchery-8811581bb/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/WebXoX" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </nav>
+            <div class="wrapper" v-if="stateShow()===1">
+                <div class="cols cols0">
+                    <span class="topline"></span>
+                    <h1>I'm a <span class="multiText"></span></h1>
+                    <!-- <p>hkjzvn afhdk af ahf haifudhahsdf wwas here what are you dojing iam jeff</p> -->
+                    <div class="btn">
+                        <a href="../CV-Joe.pdf" target="_blank"><button id="button1">CV</button></a>
+                        <Button id="button1">hire me</Button>
+                    </div>
+                </div>
+                <div class="cols cols1">
+                    <div class="imgbox">
+                        <img src="../img/splash.png"  style="position:relative;top:500px; "alt="" class="splash">
+                        <img src="../img/Untitled2.png"  style="height: 900px; position:relative;top:-500px; " alt="">
+                    </div>
+                </div>
+    
+            </div>
+                <div class="blogged" v-if="stateShow()===3">
+                    <u><h2 class="bHeader">My Projects</h2></u>
+                    <div class="blog_contained">
+                        <div class="blog_link" v-for="elements in projects">
+                            <button style="border: transparent; background-color:transparent" @click="blogDiscrp(elements)">
+                                <div class="blog_img">
+                                    <img v-bind:src="elements.image" alt="" class="blog_">
+                                </div>
+                                <div class="blog_title">
+                                    <h4>{{elements.title}}</h4>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog_container" v-if="stateShow()===4" >
+
+                    <div class="blog">
+                        <div class="blog_nav">
+                            <div class="header">
+                                <h1>{{discription.title}} 
+                                    <img class="image2" style="width: 50px;height: 50px;" v-bind:src="discription.image2" alt="">
+                                </h1>
+                            </div>
+                            <div class="close">
+                                <button @click= "closed()" class="closeB" id="button1">
+                                    <span class="material-symbols-outlined">cancel</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blog_body">
+                            <p>{{discription.discrpt}}</p>
+                            <br>
+                            <div class="gitlink">
+                             <p>GitHub Repository:<a v-bind:href="discription.link" target="_blank">{{discription.link}}</a> </p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img style="width: 300px;height: 250px; border-radius:30px;" v-bind:src="discription.image" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="skills_container" v-if="stateShow()===2">
+                    <u><h2 class="skHeader">My Skills</h2></u>
+                    <div class="skcontai">
+                        <div class="sk" v-for="elements in skills">
+                            <div class="skimg">
+                                <img v-bind:src="elements.image" style="height:50px; width:50px" alt="">
+                            </div>
+                            <div class="skillName">
+                                {{elements.title}}
+                            </div>
+                            <div class="skdiscript">
+                                <p>{{elements.discription}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about" v-if="stateShow()===0">
+                    <u><h2 class="abHeader">About Me</h2></u>
+                        <div class="about_blob">
+                            <p>As an aspiring web developer, I have a strong passion for all things technology and a desire to turn my hobby into a fulfilling career. I have always been fascinated by computers, coding, and gaming, and have spent countless hours learning about different programming languages, web frameworks, and software development methodologies. As a student, I am continuously seeking new opportunities to build my skills and gain real-world experience in the IT industry. Through internships and personal projects, I have developed a diverse skill set that includes front-end and back-end development, database management, and project management. My goal is to use my knowledge and experience to make meaningful contributions to the technology industry and help build innovative solutions that improve people's lives.</p>
+                        </div>
+
+                    <div class="Qualifications">
+                        <u><h2 class="qHeader">Qualifications</h2></u>
+                        <p>
+                       <img src="../img/42.png" style="height: 50px; position:fixed;top:190px; right:370px" alt=""><div class="headq">42 Abu Dhabi</div>
+                        Diploma of Computer Software Engineering<br>
+                        2022 - 2023<br></p><br>
+                        <p>
+                       <img src="../img/mdx.png" style="height: 50px;position:fixed;top:270px; right:370px" alt=""><div class="headq">Middlesex University Dubai</div>
+                        Bachelor's degreeComputer Science<br>
+                        2020 - 2023</p>
+                    </div>
+                    <div class="WorkExperience">
+                        <u><h2 class="wHeader">Work Experience</h2></u>
+                        <p>NA</p>
+                    </div>
+                    <div class="reflect">
+                        <u><h2 class="rHeader">Reflection</h2></u>
+                            <div class="reflection_blob">
+                                <p>As someone who is learning coding in C, Java, and web development, I've come to appreciate the vastness of the coding world. When I first started, I struggled to grasp the basic concepts and syntax of each language. However, as I continued to learn and practice, I began to see how each language is unique in its own way, with its own strengths and weaknesses.
+    
+                                    Through my experiences in web development, I learned how to create websites that are both visually appealing and highly functional. I enjoyed the challenge of incorporating various programming languages, such as HTML, CSS, and JavaScript, to create dynamic and interactive web pages.
+                                    
+                                    In Java, I found myself drawn to the object-oriented programming paradigm, which I believe is a powerful way of organizing code. I appreciated how Java provided me with the tools to create complex applications while maintaining a high level of modularity and abstraction.
+                                    
+                                    In C, I discovered the importance of writing efficient and optimized code, especially when working with low-level system operations. I enjoyed learning about memory management and the inner workings of the computer system.
+                                    
+                                    Overall, my journey in learning coding has been challenging but also rewarding. Each language and skillset has given me a new perspective on how to approach problems and has broadened my understanding of the possibilities that programming can offer.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        let webstore = new Vue({
+            el: '#app', //mounting div to object
+            data: {     //data fields
+                sitename: 'MDX',
+                state: 1,
+                projects: project,
+                discription:{
+                    title: "",
+                    discrpt:"",
+                    link:"",
+                    image: "",
+                    image2: ""
+                },
+                skills: skill,    
+            },
+            methods: {
+                stateShow(){
+                    for(let i = 0;i<4;i++){
+                        if(i===this.state)
+                            document.getElementById(i).style.color="blueviolet";
+                        else
+                            document.getElementById(i).style.color="#3d535f"
+                    }
+                    return this.state
+                },
+                showBlogs(id){
+                    this.state =id;
+                    document.querySelector('body').style.overflow="hidden";
+
+                    if(id===3||id===2){
+                        document.querySelector('body').style.overflow="visible";
+                    }
+                },
+                blogDiscrp(id){
+                    /*const box = document.querySelector('.blog_contained');
+                    box.style.visibility = 'hidden';
+                    const b = document.querySelector('.blog_container');
+                    setTimeout(function() {
+                        b.style.visibility = 'visible';
+                    }, 275);*/ 
+                    document.querySelector('body').style.overflow="hidden";
+                    this.state=4
+                    this.discription.title=id.title;
+                    this.discription.discrpt=id.discription;
+                    this.discription.link=id.link;
+                    this.discription.image= id.image;
+                    this.discription.image2= id.image2;
+                },closed(){
+                    /*const box = document.querySelector('.blog_contained');
+                    const b = document.querySelector('.blog_container');
+                    b.style.visibility = 'hidden';
+                     box.style.visibility = 'visible';*/
+                    document.querySelector('body').style.overflow="visible";
+
+                     this.state=3
+                }
+            }
+        });
+        
+         
+        var typingEffect = new Typed(".multiText",{
+            strings:["coder","desginer","data analyst"],
+            loop: true,
+            typeSpeed:100,
+            backSpeed:80,
+            backDelay: 1500,
+        })
+    </script>
+</body>
+</html>

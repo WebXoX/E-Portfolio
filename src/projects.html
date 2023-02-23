@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheet/blog.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <!-- <div class="blog_contained">
+        <div class="blog_link">
+            <button style="border: transparent; background-color:transparent" onclick="blog_expand()">
+                <div class="blog_img">
+                    <img src="..\img\35x45 .jpg" alt="" class="blog_">
+                </div>
+                <div class="blog_title">
+                    <h4>Blog Title</h4>
+                </div>
+            </button>
+        </div>
+    </div>
+    <div class="blog_container" style="visibility: hidden;">
+        <div class="blog">
+            <div class="blog_nav">
+                <div class="header">
+                    <h1>project title</h1>
+                </div>
+                <div class="close">
+                    <button class="closeB">
+                        <span class="material-symbols-outlined">cancel</span>
+                    </button>
+                </div>
+            </div>
+           
+        </div>
+    </div> -->
+
+    <div class="skills_container">
+        <h1 class="skHeader">My Skills</h1>
+        <div class="sk_blob">
+            <div class="skimg">
+                <img src="../img/c.png" style="height:50px; width:50px" alt="">
+            </div>
+            <div class="skillName">
+                c
+            </div>
+            <div class="skdiscript">
+                <p>asdasdasddddddddd</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function blog_expand(){
+            const box = document.querySelector('.blog_contained');
+            const box1 = document.querySelector('.blog_');
+            const box2 = document.querySelector('.blog_link');
+            const b = document.querySelector('.blog_container');
+            box1.style.visibility = 'hidden';
+            document.querySelector('.blog_title').style.visibility='hidden';
+            box2.style.animation = 'expand 1s forwards';
+            setTimeout(function() {
+                box.style.visibility = 'hidden';
+                b.style.visibility = 'visible';
+			}, 820); 
+                 //box2.style.animation = 'detract 1s';*/
+
+            //box1.style.visibility = 'visible';
+            //document.querySelector('.blog_title').style.visibility='visible';
+//            box2.style.animation = 'expand 1s';
+           // setTimeout(function() {
+            //    box.style.visibility = 'visible';
+			//}, 820); 
+        }        
+    </script>
+</body>
+</html>
