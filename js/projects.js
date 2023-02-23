@@ -14,7 +14,7 @@ let project = [
         "discription":"LIBFT is a project created for students of the 42 coding school, which involves recreating existing C library functions as well as implementing new ones. The goal of the project is to help students gain a deeper understanding of standard C library functions and to improve their programming skills. The project involves writing functions that perform common operations such as string manipulation, memory allocation, and basic data type operations. Some of the functions that are implemented include strlen, strcpy, strcmp, atoi, and malloc, among others. In addition, students are required to create a library that contains all of the implemented functions, which can be used in future projects.The LIBFT project is considered a fundamental project for students of 42, as it provides a foundation for their programming skills and helps them to understand the inner workings of standard C library functions.",
         "link": "https://github.com/WebXoX/LIBFT",
         "image": "../img/libft.png",        
-        "image2": "../img/c.png",
+        "image2": "../img/cl.png",
         "show":true
     },
      {
@@ -23,7 +23,7 @@ let project = [
         "discription":"The get_next_line project in 42 teaches several important skills and concepts related to file input/output and memory management in C programming. Firstly, it teaches how to read input from a file and return a line of input each time the function is called, using various techniques such as buffer management and string manipulation. This involves understanding the concepts of file descriptors, memory allocation, and pointer manipulation. Additionally, the project emphasizes the importance of error handling, and requires the implementation of error checking and handling to ensure the program is robust and does not crash when encountering unexpected input or errors. Overall, the get_next_line project is a good introduction to file input/output in C, and provides a foundation for more advanced programs that require reading and processing data from files.",
         "link": "https://github.com/WebXoX/get_next_line",
         "image": "../img/Get_next_line.png",        
-        "image2": "../img/c.png",
+        "image2": "../img/cl.png",
         "show":true
     },
     {
@@ -32,7 +32,7 @@ let project = [
         "discription":"The ft_printf project in 42 teached me how to recreate the functionality of the standard C library function printf(). Students learn to parse the format string, handle various format specifiers, and output the formatted text to the console or a file.The project involves creating a custom version of printf() called ft_printf() that accepts a format string and any additional arguments, then outputs the formatted text. Students must handle various format specifiers, such as %d for integers, %s for strings, and %f for floating point numbers, and be able to format the output based on the specifier and any additional flags or width/precision information provided in the format string. Through this project, I gained a deeper understanding of string manipulation, memory management, and the inner workings of the standard C library function printf(). They also learn to write efficient and reusable code, as well as develop debugging skills to find and fix errors in their code.",
         "link": "https://github.com/WebXoX/FT_PRINTF",
         "image": "../img/ft_printf.png",        
-        "image2": "../img/c.png",
+        "image2": "../img/cl.png",
         "show":true
     },
     {
