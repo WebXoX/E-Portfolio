@@ -3,7 +3,7 @@ let skill = [
     {
         "title": "C",
         "discription":"I have a deep understanding of its syntax, data types, and memory management. I am comfortable working with pointers, arrays, structures, and functions, and can write efficient and optimized code. I also have experience with low-level programming and can work with system calls and machine-level code. Overall, my expertise in C allows me to develop high-performance applications and software solutions with confidence.",
-        "image": "../img/C.png",
+        "image": "../img/c.png",
     },
     {
         "title": "JAVA",
