@@ -52,4 +52,49 @@ let project = [
         "image2": "../img/java.png",
         "show":true
     }
+    , {
+        "id": 1007,
+        "title": "Cub3D",
+        "discription":"I learned how to solve the traveling salesman problem using the 2-opt algorithm in Java. The 2-opt algorithm is a local search algorithm that iteratively improves a given tour of cities until a locally optimal solution is reached. The worst part of this process was preparing the data, which involves creating a distance matrix for the cities to be visited. The best part of this process was search, where I was able to apply the 2-opt algorithm to iteratively improve the tour and reach a locally optimal solution. Overall, this gave me a solid foundation in problem-solving with algorithms and data structures, as well as experience working with Java programming language. ",
+        "link": "https://github.com/WebXoX/Traveling-Sales-Man",
+        "image": "../img/tsm.png",        
+        "image2": "../img/java.png",
+        "show":true
+    }, 
+    {
+        "id": 1008,
+        "title": "Minishell",
+        "discription":"I learned how to solve the traveling salesman problem using the 2-opt algorithm in Java. The 2-opt algorithm is a local search algorithm that iteratively improves a given tour of cities until a locally optimal solution is reached. The worst part of this process was preparing the data, which involves creating a distance matrix for the cities to be visited. The best part of this process was search, where I was able to apply the 2-opt algorithm to iteratively improve the tour and reach a locally optimal solution. Overall, this gave me a solid foundation in problem-solving with algorithms and data structures, as well as experience working with Java programming language. ",
+        "link": "https://github.com/WebXoX/Traveling-Sales-Man",
+        "image": "../img/tsm.png",        
+        "image2": "../img/java.png",
+        "show":true
+    },
+    {
+        "id": 1009,
+        "title": "IRC",
+        "discription":"I learned how to solve the traveling salesman problem using the 2-opt algorithm in Java. The 2-opt algorithm is a local search algorithm that iteratively improves a given tour of cities until a locally optimal solution is reached. The worst part of this process was preparing the data, which involves creating a distance matrix for the cities to be visited. The best part of this process was search, where I was able to apply the 2-opt algorithm to iteratively improve the tour and reach a locally optimal solution. Overall, this gave me a solid foundation in problem-solving with algorithms and data structures, as well as experience working with Java programming language. ",
+        "link": "https://github.com/WebXoX/Traveling-Sales-Man",
+        "image": "../img/tsm.png",        
+        "image2": "../img/java.png",
+        "show":true
+    },
+    {
+        "id": 1010,
+        "title": "Inception",
+        "discription":"I learned how to solve the traveling salesman problem using the 2-opt algorithm in Java. The 2-opt algorithm is a local search algorithm that iteratively improves a given tour of cities until a locally optimal solution is reached. The worst part of this process was preparing the data, which involves creating a distance matrix for the cities to be visited. The best part of this process was search, where I was able to apply the 2-opt algorithm to iteratively improve the tour and reach a locally optimal solution. Overall, this gave me a solid foundation in problem-solving with algorithms and data structures, as well as experience working with Java programming language. ",
+        "link": "https://github.com/WebXoX/Traveling-Sales-Man",
+        "image": "../img/tsm.png",        
+        "image2": "../img/java.png",
+        "show":true
+    },
+    {
+        "id": 1011,
+        "title": "Ft_Transcendence",
+        "discription":"I learned how to solve the traveling salesman problem using the 2-opt algorithm in Java. The 2-opt algorithm is a local search algorithm that iteratively improves a given tour of cities until a locally optimal solution is reached. The worst part of this process was preparing the data, which involves creating a distance matrix for the cities to be visited. The best part of this process was search, where I was able to apply the 2-opt algorithm to iteratively improve the tour and reach a locally optimal solution. Overall, this gave me a solid foundation in problem-solving with algorithms and data structures, as well as experience working with Java programming language. ",
+        "link": "https://github.com/WebXoX/Traveling-Sales-Man",
+        "image": "../img/tsm.png",        
+        "image2": "../img/java.png",
+        "show":true
+    }
 ]
