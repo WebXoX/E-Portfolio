@@ -192,16 +192,17 @@ font-family: 'Secular One', sans-serif;
     left: 1300px;
     bottom: 40px;;
     background: transparent;
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     border-radius: 150px;
     /* text-align: center; */
     /* border: transparent; */
 }
 .image{
-    position: fixed;
-    right: 250px;
-    bottom: 100px;
+    position: relative;
+    /* right: 250px; */
+    left: 75%;
+    bottom: 30%;
     width: 200px;
     height: 300px;
 }

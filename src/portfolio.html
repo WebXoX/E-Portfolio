@@ -186,6 +186,12 @@
                     setTimeout(function() {
                         b.style.visibility = 'visible';
                     }, 275);*/ 
+                    window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: 'smooth'
+                        });
+
                     document.querySelector('body').style.overflow="hidden";
                     this.state=4
                     this.discription.title=id.title;

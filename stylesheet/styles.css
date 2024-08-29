@@ -150,7 +150,7 @@ p{
     outline: none;
     border: none;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 400;
     color: #fff;
     background-color: #3d535f;
@@ -163,7 +163,10 @@ p{
 #button1:hover{
     background-color: blueviolet;
 }
-    
+#button1>span
+{
+    font-size: 30px;
+}
 .imgbox{
     position: relative;
     height: 100%;
