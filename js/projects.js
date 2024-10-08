@@ -79,7 +79,7 @@ let project = [
     {
         "id": 1009,
         "title": "IRC",
-        "discription":"The 42 IRC project involves creating an Internet Relay Chat (IRC) server using C++. I will build a server that allows users \
+        "discription":"The 42 IRC project involves creating an Internet Relay Chat (IRC) server using C++. I built a server that allows users \
                         to connect, join channels, and exchange messages. Key concepts include socket programming, protocol design, and \
                         handling concurrency. The project emphasizes user authentication and real-time chat functionality. ",
         "link": "https://github.com/WebXoX/irc",
@@ -106,9 +106,9 @@ let project = [
                         develop a full-stack web application that features a Pong game. The project requires    \
                         students to integrate various modules into both the front and back end of the application,  \
                         allowing for the incorporation of various technologies and features ",
-        "link": "https://github.com/WebXoX",
+        "link": "private-repo",
         "image": "../img/pong.png",        
-        "image2": "../img/fullstack.png",
+        "image2": "../img/web.png",
         "show":true
     }
 ]
